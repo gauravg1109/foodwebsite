@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    paddding: 0px;
+}
+
+body {
+    background-color: rgb(223, 235, 235);
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar:Logo and images */
+#logo {
+    margin: 0px;
+
+}
+
+#logo img {
+    height: 100px;
+    margin: 2px 2px;
+}
+
+/* Navigation Bar:List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* section edit */
+#home::before {
+    content: "";
+    background: url('food2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    /* opacity: 0.8; */
+    z-index: -1;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+}
+
+#home h1 {
+
+    color: white;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+
+#home p {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+
+}
+
+/* utility classes */
+.h-primary {
+    font-family: 'Secular One', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 3px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* services section */
+.center {
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 34px;
+    font-family: 'Secular One', sans-serif;
+}
+
+#services {
+    margin: 20px;
+    display: flex;
+}
+
+#services .box {
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+    padding: 34px;
+    border: 2px solid brown;
+
+}
+
+#services .box p {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.2rem;
+}
+
+#services .box img {
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+/* #client section */
+#client-section {
+    height: 600px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('food image.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Secular One', sans-serif;
+
+}
+
+#clients img {
+    height: 144px;
+}
+
+.client-items {
+    padding: 56px;
+}
+
+/* conatct section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('cu.jpg');
+
+
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 20px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+    height: 34px;
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 9px;
+}
+
+#contact-box textarea {
+
+    width: 100%;
+    padding: 0.5rem;
+    height: 100px;
+    border-radius: 9px;
+
+}
+
+#contact-box form {
+    width: 40%;
+
+
+}
+
+#contact-box label {
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+
+}
+html{
+    scroll-behavior: smooth;
+}
